@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ShortcutList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="SCM_Schema.xsd">
+  <Shortcuts>
+    <Shortcut>
+      <Name>Dingens1</Name>
+      <Shorthand>GGB</Shorthand>
+      <Keycombo>strg+G</Keycombo>
+      <Path>yolo.exe</Path>
+      <Parameters>-yeah</Parameters>
+    </Shortcut>
+    <Shortcut>
+      <Name>Dingens2</Name>
+      <Shorthand>FFX</Shorthand>
+      <Keycombo>strg+F</Keycombo>
+      <Path>lmao.exe</Path>
+    </Shortcut>
+    <Shortcut>
+      <Name>Dingens3</Name>
+      <Shorthand>JKL</Shorthand>
+      <Keycombo>strg+M</Keycombo>
+      <Path>woopwoop.exe</Path>
+      <IconLocation>C:\Users\Fiae\Source\Repos\SCTest\SCManager\SCManager\bin\Debug\1453304458_FireFox.png</IconLocation>
+    </Shortcut>
+  </Shortcuts>
+</ShortcutList>
