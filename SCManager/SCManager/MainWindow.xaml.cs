@@ -24,7 +24,7 @@ namespace SCManager
             InitializeComponent();
             ShortcutList SCList = new ShortcutList();
             ListSerializer.DeSerialize(SCList, "Shortcuts.xml");
-            listView.ItemsSource = SCList.Shortcuts;
+            dataGrid.ItemsSource = SCList.Shortcuts;
         }
     }
 }

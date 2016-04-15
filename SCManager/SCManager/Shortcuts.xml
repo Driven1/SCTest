@@ -19,7 +19,7 @@
       <Shorthand>JKL</Shorthand>
       <Keycombo>strg+M</Keycombo>
       <Path>woopwoop.exe</Path>
-      <IconLocation>C:\Users\Fiae\Source\Repos\SCTest\SCManager\SCManager\bin\Debug\1453304458_FireFox.png</IconLocation>
+      <IconLocation>Resources\Icons\1453304458_FireFox.png</IconLocation>
     </Shortcut>
   </Shortcuts>
 </ShortcutList>

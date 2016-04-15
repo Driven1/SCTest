@@ -68,5 +68,12 @@ namespace SCManager
             get { return parameters; }
             set { parameters = value; }
         }
+
+        // Eigenschaft, die dazu dient, die Datenbindung im DataGrid mit relativen Pfad-Angaben zu ermöglichen ohne die Serialisierung zu stören.
+        [XmlIgnore]
+        public string IconBindingUri
+        {
+            get  { return System.IO.Path.GetFullPath(iconLocation); }
+        }
     }
 }

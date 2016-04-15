@@ -16,7 +16,7 @@ namespace SCMTest
         {
             original.Shortcuts.Add(new Shortcut { Name = "Dingens1", Shorthand = "GGB", Keycombo = "strg+G", Path = "yolo.exe", Parameters = "-yeah" });
             original.Shortcuts.Add(new Shortcut { Name = "Dingens2", Shorthand = "FFX", Keycombo = "strg+F", Path = "lmao.exe" });
-            original.Shortcuts.Add(new Shortcut { Name = "Dingens3", Shorthand = "JKL", Keycombo = "strg+M", Path = "woopwoop.exe", IconLocation = @"C:\Users\Fiae\Source\Repos\SCTest\SCManager\SCManager\bin\Debug\1453304458_FireFox.png" });
+            original.Shortcuts.Add(new Shortcut { Name = "Dingens3", Shorthand = "JKL", Keycombo = "strg+M", Path = "woopwoop.exe", IconLocation = "1453304458_FireFox.png" });
             ListSerializer.Serialize(original, "Shortcuts.xml");
             ListSerializer.DeSerialize(deserialized, "Shortcuts.xml");
         }

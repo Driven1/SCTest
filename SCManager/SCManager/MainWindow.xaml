@@ -1,32 +1,28 @@
-﻿<Window x:Class="SCManager.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SCManager"
+        xmlns:Custom="http://schemas.microsoft.com/wpf/2008/toolkit" x:Class="SCManager.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="214.706" Margin="47.961,33.804,0,0" VerticalAlignment="Top" Width="415.686">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Width="auto" Header="">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                
-                                    <Image Width="32" Height="32" Stretch="Fill" Source="{Binding Path=IconLocation}"/>
-                                    
-                                
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-                    <GridViewColumn Width="Auto" Header="Tasten" DisplayMemberBinding="{Binding Keycombo}" />
-                    <GridViewColumn Width="Auto" Header="Kürzel" DisplayMemberBinding="{Binding Shorthand}"/>
-                    <GridViewColumn Width="Auto" Header="Name" DisplayMemberBinding="{Binding Name}" />
-                    <GridViewColumn Width="Auto" Header="Parameter" DisplayMemberBinding="{Binding Parameters}" />
-                </GridView>
-            </ListView.View>
-        </ListView>
 
+    <Grid Background="Gray">
+        <Custom:DataGrid x:Name="dataGrid" HorizontalAlignment="Center" Height="300" Margin="144.207,10,10,10" VerticalAlignment="Center" Width="362.793" CanUserReorderColumns="False" HeadersVisibility="Column" AutoGenerateColumns="False" Background="White" CanUserAddRows="False" BorderBrush="Black" BorderThickness="1">
+            <Custom:DataGrid.Columns>
+                <Custom:DataGridTemplateColumn>
+                    <Custom:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Width="32" Height="32" Stretch="Fill" Source="{Binding IconBindingUri}"/>
+                        </DataTemplate>
+                    </Custom:DataGridTemplateColumn.CellTemplate>
+                </Custom:DataGridTemplateColumn>
+                <Custom:DataGridTextColumn Width="Auto" Header="Tasten" Binding="{Binding Keycombo}"/>
+                <Custom:DataGridTextColumn Width="Auto" Header="Kürzel" Binding="{Binding Shorthand}"/>
+                <Custom:DataGridTextColumn Width="Auto" Header="Name" Binding="{Binding Name}"/>
+                <Custom:DataGridTextColumn Width="Auto" Header="Parameter" Binding="{Binding Parameters}"/>
+            </Custom:DataGrid.Columns>
+        </Custom:DataGrid>
     </Grid>
 </Window>
